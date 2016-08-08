@@ -1,0 +1,23 @@
+$black: #1C1C1C;
+$white: #FFFFFF;
+$grey: #929292;
+$primary-color: #57DAC4;
+$lightblue: #00BFF5;
+$mediumblue: #3BA0B2;
+$fuschia: #FF005F;
+$maroon: #BC1957;
+$lightgreen: #B5D55F;
+$mediumgreen: #02AE73;
+$purple: #764DEB;
+
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+@mixin key-line ($width, $color) {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		width: $width;
+		border-bottom: 1px solid $color;
+}

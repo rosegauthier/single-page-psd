@@ -1,0 +1,61 @@
+.courses-search {
+	background-color: $primary-color;
+	text-align: center;
+	text-shadow: 0 2px 0 #6AB4A9;
+	color: white;
+	h2 {
+		padding-top: 72px;
+		font-size: 48px;
+		font-weight: 600;
+	}
+	p {
+		padding: 47px;
+		font-size: 21px;
+		letter-spacing: 1px;
+	}
+	form {
+		padding-top: 18px;
+		padding-bottom: 77px;
+		.category {
+			width: 270px;
+		}
+		.type {
+			width: 170px;
+		}
+		input:not([type=submit]), select {
+			margin: 10px 30px 10px 0;
+			background-color: $white;
+			border-radius: 5px;
+			border: 1px solid transparent;
+			outline: none;
+			&:focus {
+				border: 1px solid $primary-color;
+				box-shadow: 0 0 10px white;
+			}
+		}
+		select {
+			height: 45px;
+			color: #8F8F8F;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+			background-image: url(../images/downgreen.png);
+			background-repeat: no-repeat;
+			background-position: 95% center;
+			background-size: contain;
+		}
+		input, select {
+			padding: 13px;
+		}
+		input[type=search] {
+			width: 275px;
+		}
+		input[type=submit]:hover {
+			background-color: $white;
+			color: $primary-color;
+		}
+		@media (max-width: 850px) {
+			width: 100%;
+		}
+	}
+}

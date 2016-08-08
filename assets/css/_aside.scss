@@ -1,0 +1,86 @@
+aside {
+	float: left;
+	width: calc(24% - 5px);
+	margin-left: 5px;
+	form {
+		position: relative;
+		margin-top: 49px;
+		width: 80%;
+		input[type=search] {
+			width: 100%;
+			padding: 14px 0 14px 20px;
+			border-radius: 5px;
+			border: 1px solid #D9D9D9;
+			&:focus {
+				border: 1px solid $primary-color;
+			}
+		}
+		label {
+			position: absolute;
+			top: 13px;
+			right: 5px;
+			font-size: 18px;
+		}
+	}
+	h2 {
+		padding-top: 60px;
+		padding-bottom: 28px;
+		border-bottom: 1px solid #D6DCDA;
+		font-size: 16px;
+		text-transform: capitalize;
+		letter-spacing: 2px;
+	}
+	article {
+		color: #8B8B8B;
+		margin-top: 25px;
+		&:first-of-type {
+			margin-top: 32px;
+		}
+		.popular-img {
+			float: left;
+			width: 26%;
+			img {
+				width: 100%;
+			}
+		}
+		.popular-info {
+			float: left;
+			width: 74%;
+			margin-top: -10px;
+			padding-left: 31px;
+			line-height: 1.9;
+		}
+	}
+	ul {
+		padding-top: 10px;
+	}
+	a {
+		padding: 16px 0;
+		color: #8B8B8B;
+		transition: color 0.3s;
+		&:hover {
+			color: $black;
+		}
+	}
+	li:last-child a {
+		padding-bottom: 10px;
+	}
+	@media (max-width: 800px) {
+		float: none;
+		width: 100%;
+		.popular-container, .categories-container, .archives {
+			float: left;
+			width: calc(33.3% - 20px);
+			margin-right: 20px;
+		}
+	}
+	@media (max-width: 600px) {
+		.popular-container {
+			float: none;
+			width: 100%;
+		}
+		.categories-container, .archives {
+			width: calc(50% - 20px);
+		}
+	}
+}

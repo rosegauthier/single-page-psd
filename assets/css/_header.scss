@@ -1,0 +1,167 @@
+header {
+	background-color: $black;
+	form {
+		position: relative;
+	}
+	.header-search {
+		width: 190px;
+		margin-top: 6px;
+		padding: 6px 0 6px 60px;
+		background-color: #3D3D3F;
+		border: none;
+		border-radius: 20px;
+		font-weight: 200;
+		color: white;
+	}
+}
+
+.secondary-page-header {
+	padding-top: 20px;
+}
+
+.top-header {
+	padding-bottom: 16px;
+	img {
+		float: left;
+		@media (max-width: 500px) {
+			float: none;
+		}
+	}
+	form {
+		float: right;
+		@media (max-width: 500px) {
+			float: none;
+		}
+	}
+	label {
+		position: absolute;
+		top: 6px;
+		left: 10px;
+		height: 31px;
+		padding-top: 5px;
+		padding-right: 10px;
+		border-right: 1px solid black;
+		color: white;
+	}
+}
+
+.bottom-header {
+	position: relative;
+	a, label {
+		display: inline-block;
+		padding: 14px 21px;
+		font-family: $secondary-font;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 1px;
+		transition: color 0.3s;
+		@media (max-width: 900px) {
+			padding: 14px 15px;
+		}
+	}
+	a:hover, label:hover {
+		color: $primary-color;
+	}
+}
+
+nav {
+	float: left;
+	label.toggle-nav, .fa-navicon {
+		display: none;
+		font-size: 28px;
+		padding: 7px 15px;
+	}
+	li {
+		float: left;
+		@media (max-width: 800px) {
+			float: none;
+		}
+	}
+	li:first-of-type a {
+		padding-left: 2px;
+	}
+	.course-dropdown, .tutorial-dropdown, .page-dropdown {
+		position: relative;
+		z-index: 10;
+	}
+	.dropdown {
+		position: absolute;
+		height: 0;
+		overflow: hidden;
+		transition: height 0.5s;
+		li {
+			background-color: $black;
+			a {
+				text-align: center;
+			}
+		}
+		li:first-of-type a {
+			padding-left: 21px;
+			@media (max-width: 900px) {
+				padding-left: 15px;
+			}
+		}
+	}
+	input[type=checkbox] {
+		display: none;
+	}
+	.fa-angle-down, .fa-angle-right {
+		display: inline-block;
+		padding-left: 5px;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+	.fa-angle-right {
+		display: none;
+	}
+	@media (max-width: 800px) {
+		label.toggle-nav, .fa-navicon {
+			display: inline-block;
+		}
+		ul {
+			position: absolute;
+			display: none;
+			background-color: $black;
+			z-index: 10;
+		}
+		input[type=checkbox]:checked ~ ul {
+			display: block;
+		}
+		.fa-angle-down {
+			display: none;
+		}
+		.fa-angle-right {
+			display: inline-block;
+		}
+		.dropdown {
+			top: 0;
+			left: 100%;
+			background-color: $primary-color;
+			li {
+				background-color: $primary-color;
+				a:hover {
+					color: $black;
+				}
+			}
+		}
+		li:first-child a {
+			padding-left: 15px;
+		}
+	}
+}
+
+input[type=checkbox]:checked ~ .dropdown {
+	height: 200px;
+}
+
+.sign {
+	float: right;
+	li {
+		float: left;
+	}
+	a:last-child {
+		padding-right: 0;
+	}
+}

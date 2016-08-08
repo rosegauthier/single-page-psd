@@ -1,0 +1,98 @@
+.account {
+	background: url(../images/bgSignup.jpg) top center;
+	padding-top: 130px;
+	padding-bottom: 97px;
+	@media (max-width: 550px) {
+			padding: 80px 0;
+	}
+	.account-form {
+		width: 510px;
+		margin: 0 auto;
+		padding: 39px 43px;
+		border: 25px solid rgba(255, 255, 255, 0.2); 
+		-moz-background-clip: padding; 
+		-webkit-background-clip: padding; 
+		background-clip: padding-box;
+		background-color: white;
+		text-align: center;
+		@media (max-width: 600px) {
+			width: 80%;
+			padding: 39px 20px;
+		}
+		img {
+			width: 50px;
+		}
+		h2 {
+			padding-top: 24px;
+			font-size: 32px;
+			font-weight: 300;
+			span {
+				font-weight: 500;
+			}
+			@media (max-width: 600px) {
+				font-size: 26px;
+			}
+		}
+		.account-subheading {
+			position: relative;
+			margin-bottom: 32px;
+			padding-bottom: 20px;
+			color: #999999;
+			&::after {
+				@include key-line(100%, #999999);
+			}
+		}
+		.account-form-element {
+			position: relative;
+			padding-bottom: 19px;
+		}
+		input {
+			width: 100%;
+			padding: 9px 20px;
+			border: 1px solid #999999;
+			&:focus {
+				border: 1px solid $primary-color;
+			}
+		}
+		input[type=submit] {
+			width: 225px;
+			margin: 30px 0;
+			padding: 15px 0;
+			background-color: $primary-color;
+			border: 1px solid $primary-color;
+			box-shadow: 0 4px 0 #3DAA9A;
+			letter-spacing: 1px;
+			transition: box-shadow 0.2s, margin 0.2s;
+			&:hover {
+				color: #3DAA9A;
+			}
+			&:active {
+				margin-top: 34px;
+				margin-bottom: 26px;
+				box-shadow: 0 0 0 #3DAA9A;
+			}
+			@media (max-width: 500px) {
+				width: 100%;
+				margin: 15px 0;
+				font-size: 14px;
+			}
+		}
+		label {
+			position: absolute;
+			top: 11px;
+			right: 13px;
+			font-size: 16px;
+			color: #999999;
+		}
+	}
+	form + p {
+		font-size: 14px;
+		a {
+			color: $primary-color;
+			font-weight: 400;
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+}

@@ -1,0 +1,182 @@
+footer {
+	position: relative;
+	background-color: $black;
+	color: #404040;
+	@media (max-width: 1050px) {
+		padding: 0 20px;
+	}
+	a {
+		display: block;
+		color: #404040;
+	}
+	.footer-top	{
+		padding: 72px 0;
+		text-align: center;
+		p {
+			padding: 5px 0 23px 0;
+			font-size: 32px;
+			color: white;
+			letter-spacing: 2px;
+			@media (max-width: 450px) {
+				font-size: 24px;
+			}
+		}
+		input[type=email] {
+			width: 35%;
+			margin-right: 30px;
+			padding: 10px;
+			border: none;
+			background-color: #333333;
+			color: white;
+			letter-spacing: 1px;
+			@media (max-width: 700px) {
+				width: 80%;
+			}
+		}
+		input[type=submit] {
+			margin-right: 30px;
+			transition: all 0.3s;
+			&:hover {
+				background-color: $primary-color;
+				border: 1px solid $primary-color;
+			}
+		}
+	}
+	.footer-middle {
+		img {
+			display: block;
+			padding: 48px 0;
+		}
+		.footer-info {
+			float: left;
+			width: calc(25% - 41px);
+			margin-right: 48px;
+			h3 {
+				font-size: 16px;
+				letter-spacing: 2px;
+				padding-bottom: 17px;
+			}
+			p {
+				font-weight: 500;
+				line-height: 1.5;
+			}
+			a {
+				position: relative;
+				padding: 7px 0;
+				font-size: 16px;
+				line-height: 1.4;
+			}
+			a:first-of-type {
+				padding-top: 0;
+			}
+			&:nth-of-type(2) a::after, 
+			&:nth-of-type(3) a::after {
+				@include key-line(50%, #404040);
+			}
+			@media (max-width: 1050px) {
+				width: calc(50% - 35px);
+				margin-bottom: 50px;
+				&:nth-of-type(2) {
+					margin-right: 0;
+				}
+			}
+			@media (max-width: 600px) {
+				width: 100%;
+			}
+		}
+		.footer-info:last-child {
+			margin-right: 0;
+		}
+		.contact-group {
+			span {
+				padding-right: 5px;
+			}
+			a.contact {
+				padding: 0;
+			}
+		}
+		.social-group {
+			h3 {
+				padding-top: 40px;
+				color: $lightgreen;
+			}
+			a.social {
+				position: relative;
+				right: 15px;
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				margin: 2px;
+				padding: 10px 0;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 1;
+				span {
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+			a:hover {
+				background-color: #56ADE9;
+				color: white;
+			}
+		}
+	}
+	.footer-bottom {
+		margin-top: 58px;
+		padding: 17px 0;
+		background-color: #292929;
+		.credit, .copy {
+			font-size: 13px;
+			color: #565656;
+			font-weight: 400;
+		}
+		.credit {
+			float: left;
+		}
+		.copy {
+			float: right;
+		}
+		span {
+			text-transform: uppercase;
+		}
+		@media (max-width: 800px) {
+			.credit, .copy {
+				float: none;
+				width: 50%;
+			}
+		}
+	}
+}
+
+.footer-info:nth-of-type(1) h3 {
+	color: $fuschia;
+}
+
+.footer-info:nth-of-type(2) h3, .footer-info:nth-of-type(2) a:hover  {
+	color: $lightblue;
+}
+
+.footer-info:nth-of-type(3) h3, .footer-info:nth-of-type(3) a:hover  {
+	color: $lightgreen;
+}
+
+.footer-info:nth-of-type(4) h3, .footer-info:nth-of-type(4) a.contact:hover  {
+	color: $mediumblue;
+}
+
+.to-top	{
+	position: absolute;
+	bottom: 10px;
+	left: calc(50% - 18px);
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #4D4D4D;
+	text-align: center;
+	color: #999999;
+	span {
+		padding: 7px 0;
+		font-size: 20px;
+	}
+}

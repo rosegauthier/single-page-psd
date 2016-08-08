@@ -1,0 +1,176 @@
+body {
+	background-color: $white;
+	font-family: $primary-font;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 47px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	@media (max-width: 550px) {
+		font-size: 35px;
+	}
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: $secondary-font;
+	letter-spacing: 1px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.8;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+input[type=submit] {
+	width: 170px;
+	margin: 10px 0;
+	padding: 10px 0;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid $white;
+	text-transform: uppercase;
+	color: white;
+}
+
+input {
+	border: 1px solid transparent;
+	outline: none;
+	&:focus {
+		border: 1px solid $primary-color;
+		box-shadow: 0 0 5px $primary-color;
+	}
+}
+
+hr {
+	margin: 0;
+	border-color: #3D3D3F;
+}
+
+.outer-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1175px;
+	margin: 0 auto;
+	@media (max-width: 1000px) {
+		padding: 0 20px;
+	}
+}
+
+.heading-container {
+	padding-top: 90px;
+	font-family: $primary-font;
+	text-align: center;
+}
+
+.subheading {
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 19px;
+	text-align: center;
+	color: #929292;
+	@media (max-width: 700px) {
+		width: 75%;
+	}
+}
+
+.subheading-link {
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 41px;
+	padding: 15px 20px;
+	border-bottom: 1px solid transparent;
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: $primary-color;
+	span {
+		padding-left: 5px;
+	}
+	&:hover {
+		border-bottom: 1px solid $lightblue;
+		color: $lightblue;
+	}
+}
+
+.logistics {
+	padding-bottom: 10px;
+	padding-left: 22px;
+	p {
+		float: left;
+		font-size: 12px;
+		font-weight: 400;
+		color: #929292;
+	}
+	p:nth-of-type(2)::before, p:nth-of-type(3)::before {
+		content: "\2022";
+		padding: 0 4px;
+	}
+}
+
+.transform-uppercase {
+	text-transform: uppercase;
+}
+
+.light {
+	font-weight: 200;
+}
+
+.category-photo-video {
+	color: $lightblue;
+}
+
+.category-music-audio, .mediumblue {
+	color: $mediumblue;
+}
+
+.category-web-design, .category-interior {
+	color: $fuschia;
+}
+
+.category-computer-skills, .maroon {
+	color: $maroon;
+}
+
+.category-code {
+	color: $lightgreen;
+}
+
+.category-3D-motion {
+	color: $mediumgreen;
+}
+
+.category-business, .purple {
+	color: $purple;
+}
+
+.primary-color {
+	color: $primary-color;
+}
